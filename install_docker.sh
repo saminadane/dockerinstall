@@ -32,6 +32,6 @@ sudo systemctl enable docker
 
 # Add the current user to the docker group
 sudo usermod -aG docker ${USER}
-
+sudo chmod 666 /var/run/docker.sock
 # Inform the user to log out and back in for group changes to take effect
 echo "Docker installation complete. Please log out and back in for the group changes to take effect."
